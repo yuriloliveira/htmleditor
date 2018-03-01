@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box; }
+
+body {
+  margin: 0 !important;
+  padding: 10px; }
+
+.container, .container .row, div#html-container, div#html-input-container, div#html-input-container textarea#html-input, div#frame-container {
+  padding: 0;
+  margin: 0; }
+
+/* Bootstrap container with no margin and no padding */
+.container {
+  width: 100%; }
+  .container .row {
+    width: 100%; }
+
+div#html-input-container {
+  padding-right: 5px; }
+  div#html-input-container textarea#html-input {
+    width: 100%;
+    font-family: Inconsolata, Monaco, Consolas, 'Courier New', Courier;
+    font-size: 14px;
+    font-weight: bold; }
+
+div#frame-container {
+  padding-left: 5px; }
+  div#frame-container iframe#result-page-frame {
+    width: 100%;
+    border: 1px solid #000; }
+
+/*# sourceMappingURL=index-style.css.map */

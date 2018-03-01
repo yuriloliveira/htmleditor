@@ -1,0 +1,51 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 !important;
+  padding: 10px;
+}
+
+%no-padding-margin {
+  padding: 0;
+  margin: 0;
+}
+
+/* Bootstrap container with no margin and no padding */
+.container {
+  @extend %no-padding-margin;
+  width: 100%;
+
+  .row {
+    @extend %no-padding-margin;
+    width: 100%;
+  }
+}
+
+div#html-container {
+  @extend %no-padding-margin;
+}
+
+div#html-input-container {
+  @extend %no-padding-margin;
+  padding-right: 5px;
+
+  textarea#html-input {
+    @extend %no-padding-margin;
+    width: 100%;
+    font-family: Inconsolata, Monaco, Consolas, 'Courier New', Courier;
+    font-size: 14px;
+    font-weight: bold;
+  }
+}
+
+div#frame-container {
+  @extend %no-padding-margin;
+  padding-left: 5px;
+
+  iframe#result-page-frame {
+    width: 100%;
+    border: 1px solid #000;
+  }
+}

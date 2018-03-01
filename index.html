@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+
+<link rel="stylesheet" type="text/css" href="src/css/bootstrap-grid.min.css">
+<link rel="stylesheet" type="text/css" href="src/css/index-style.css">
+<link rel="stylesheet" type="text/css" href="src/css/common-styles.css">
+
+<script type="text/javascript" src="src/js/jquery-3.3.1.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() {
+    $("textarea#html-input").height($(document).height() - 30);
+    $("iframe#result-page-frame").height($(document).height() - 30);
+  });
+</script>
+</head>
+
+<body>
+  <div class="container" id="html-container">
+    <div class="row">
+      <div class="col-lg-6" id="html-input-container">
+        <textarea id="html-input"></textarea>
+      </div>
+      <div class="col-lg-6" id="frame-container">
+        <iframe id="result-page-frame" frameborder="0"></iframe>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
