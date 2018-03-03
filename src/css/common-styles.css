@@ -5,4 +5,41 @@
 .no-margin {
   margin: 0 !important; }
 
+/* Component styles */
+div.button {
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  -khtml-user-select: none;
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently
+             supported by Chrome and Opera */ }
+
+div.button {
+  width: 100%;
+  height: 25px;
+  text-align: center;
+  background-color: #8282be;
+  cursor: pointer;
+  float: left;
+  border-radius: 3px;
+  box-shadow: 0 3px #464682;
+  color: white;
+  font-family: 'Franklin Gothic'; }
+
+div.button:active {
+  background-color: #6464a0;
+  box-shadow: 0 1px #373773;
+  transform: translateY(2px); }
+
+/* Font Styles */
+.common-fonts {
+  font-family: Inconsolata, Monaco, Consolas, 'Courier New', Courier; }
+
 /*# sourceMappingURL=common-styles.css.map */

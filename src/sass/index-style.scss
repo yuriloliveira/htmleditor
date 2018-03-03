@@ -34,9 +34,27 @@ div#html-input-container {
   textarea#html-input {
     @extend %no-padding-margin;
     width: 100%;
-    font-family: Inconsolata, Monaco, Consolas, 'Courier New', Courier;
     font-size: 14px;
     font-weight: bold;
+    resize: none;
+  }
+
+  div.button#submit-button {
+    position: absolute;
+    width: 75px;
+    right: 10px;
+    top: 5px;
+    vertical-align: center;
+    opacity: .75;
+  }
+
+  div.button#submit-button:hover {
+    position: absolute;
+    width: 75px;
+    right: 10px;
+    top: 5px;
+    vertical-align: center;
+    opacity: .90;
   }
 }
 
