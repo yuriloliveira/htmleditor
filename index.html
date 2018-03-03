@@ -13,6 +13,13 @@
   $(document).ready(function() {
     $("textarea#html-input").height($(document).height() - 30);
     $("iframe#result-page-frame").height($(document).height() - 30);
+
+    $("#submit-button").click(function() {
+      let frm = document.getElementById('result-page-frame');
+      let frmDocument = frm.contentDocument || frm.contentWindow.document;
+      frmDocument.write($("textarea#html-input").val());
+      frmDocument.close();
+    });
   });
 </script>
 </head>
@@ -20,11 +27,11 @@
 <body>
   <div class="container" id="html-container">
     <div class="row">
-      <div class="col-12 col-sm-12 col-md-6 col-lg-5 col-xl-4" id="html-input-container">
+      <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-5" id="html-input-container">
         <div class="button" id="submit-button">Submit</div>
         <textarea class="common-fonts" id="html-input"></textarea>
       </div>
-      <div class="col-12 col-sm-12 col-md-6 col-lg-7 col-xl-8" id="frame-container">
+      <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-7" id="frame-container">
         <iframe id="result-page-frame" frameborder="0"></iframe>
       </div>
     </div>
